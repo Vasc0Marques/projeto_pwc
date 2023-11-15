@@ -1,0 +1,65 @@
+/* Reset de estilos e estilos gerais */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para a navbar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Torna a lista flexível (horizontal) */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    padding: 10px;
+}
+/* Estilos para a seção principal */
+#home {
+    text-align: center;
+    padding: 50px;
+}
+
+#home h1 {
+    font-size: 2em;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+
+/* Estilos para a seção Sobre nós */
+#about {
+    text-align: center;
+    padding: 50px;
+}
+
+#about h2 {
+    font-size: 2em;
+}
+
+.team-member {
+    margin-top: 30px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
