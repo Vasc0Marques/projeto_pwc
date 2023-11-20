@@ -1,0 +1,76 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Estilos para a navbar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 15px;
+    padding: 10px;
+}
+section {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .card_favoritos {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .card_favoritos img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card_favoritos h5 {
+    color: #333;
+  }
+  
+  .card_favoritos p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .remove-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .remove-button:hover {
+    background-color: #c9302c;
+  }
