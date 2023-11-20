@@ -44,22 +44,42 @@ nav a {
 
 
 /* Estilos para a seção Sobre nós */
-#about {
+#sobrenos {
     text-align: center;
     padding: 50px;
 }
 
-#about h2 {
+#sobrenos h2 {
     font-size: 2em;
 }
 
-.team-member {
+.membro {
     margin-top: 30px;
 }
 
-.team-member img {
+.membro img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
+}
+
+#loja {
+    text-align: center;
+    padding: 50px;
+}
+
+#loja h2 {
+    font-size: 2em;
+}
+
+.card{
+    
+}
+
+.card img{
+    width: 450px;
+    height: 450px;
+    margin-left: 120px;
+
 }

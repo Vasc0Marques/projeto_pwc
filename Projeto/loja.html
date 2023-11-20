@@ -16,8 +16,8 @@
             <li><a href="#sobrenos">Sobre nós</a></li>
             <li><a href="loja.html">Loja</a></li>
             <li><a href="#animais">Cães para adoção</a></li>
-            <li><a href="#adotar">Adotar</a></li>
-            <li><a href="#favoritos">Favoritos</a></li>
+            <li><a href="adotar.html">Adotar</a></li>
+            <li><a href="favoritos.html">Favoritos</a></li>
             <li><a href="#contactos">Contactos</a></li>
         </ul>
     </nav>
@@ -29,27 +29,34 @@
         <div class="row">
 
             <!-- Cartão de Ração -->
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6">
                 <div class="card">
-                    <img src="assets/img/racaocao.jpg" class="card-img-top" alt="Ração para Cães">
+                    <img src="assets/img/racaocao.jpg"  class="card-img-top" alt="Ração para Cães">
                     <div class="card-body">
                         <h5 class="card-title">Ração para Cães</h5>
                         <p class="card-text">Ração nutritiva para cães de todas as idades.</p>
                         <p class="card-text price">R$ 50,00</p>
-                        <button class="btn btn-success buy-button">Comprar</button>
+                        <button class="quantity-btn" onclick="retirar(1)">-</button>
+                        <input type="text" class="quantity-input" id="quantity1" value="1">
+                        <button class="quantity-btn" onclick="adicionar(1)">+</button>
+                        <p></p><button class="btn btn-success buy-button">Comprar</button>
+
                     </div>
                 </div>
             </div>
 
             <!-- Cartão de Brinquedo -->
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6">
                 <div class="card">
                     <img src="assets/img/brinquedocao.jpg" class="card-img-top" alt="Brinquedo para Cães">
                     <div class="card-body">
                         <h5 class="card-title">Brinquedo para Cães</h5>
                         <p class="card-text">Divertido brinquedo para manter seu cão entretido.</p>
                         <p class="card-text price">R$ 20,00</p>
-                        <button class="btn btn-success buy-button">Comprar</button>
+                        <button class="quantity-btn" onclick="retirar(2)">-</button>
+                        <input type="text" class="quantity-input" id="quantity2" value="1">
+                        <button class="quantity-btn" onclick="adicionar(2)">+</button>
+                        <p></p><button class="btn btn-success buy-button">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -59,6 +66,7 @@
         </div>
     </section>
     <script src="assets/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css"></script>
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>
