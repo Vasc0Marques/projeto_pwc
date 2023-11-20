@@ -1,27 +1,392 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adotar</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css">
 
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="site.html">Homepage</a></li>
-            <li><a href="#sobrenos">Sobre nós</a></li>
-            <li><a href="loja.html">Loja</a></li>
-            <li><a href="#animais">Cães para adoção</a></li>
-            <li><a href="adotar.html">Adotar</a></li>
-            <li><a href="favoritos.html">Favoritos</a></li>
-            <li><a href="#contactos">Contactos</a></li>
-        </ul>
-    </nav>
- 
+   <nav>
+      <ul>
+          <li><a href="site.html">Homepage</a></li>
+          <li><a href="#sobrenos">Sobre nós</a></li>
+          <li><a href="loja.html">Loja</a></li>
+          <li><a href="#animais">Cães para adoção</a></li>
+          <li><a href="adotar.html">Adotar</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+      </ul>
+  </nav>
+
+    <div class="container">
+    <section id="Adotar">
+        <h2>Formulário de adoção</h2>
+        <p>Obrigado pelo interesse em adoptar um dos nossos animais. Pedimos que preencha 
+            este formulário com o máximo de informação possível, para que o possamos ajudar 
+            na escolha do animal perfeito para si.
+
+           Faremos os possíveis, para que a sua experiência connosco seja fantástica.
+        </p>
+        
+        <div class="row">
     
-    <script src="assets/bootstrap-5.3.2-dist/css/bootstrap-grid.min.css"></script>
-    <script src="assets/js/script.js"></script>
+        <form>
+         <div>
+            <label for="nomeCompleto">Nome Completo *</label>
+            <p></p>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="contactoTelefonico">Contacto telefónico *</label>
+            <p></p>
+            <input type="tel" id="contactoTelefonico" name="contactoTelefonico" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="horarioPreferencial">Horário preferencial de contacto *</label>
+            <p></p>
+            <input type="time" id="horarioPreferencial" name="horarioPreferencial" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="email">E-mail *</label>
+            <p></p>
+            <input type="email" id="email" name="email" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="idade">Idade *</label>
+            <p></p>
+            <input type="number" id="idade" name="idade" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="morada">Morada *</label>
+            <p></p>
+            <input type="text" id="morada" name="morada" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="cidade">Cidade *</label>
+            <p></p>
+            <input type="text" id="cidade" name="cidade" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="profissao">Profissão *</label>
+            <p></p>
+            <input type="text" id="profissao" name="profissao" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="nome_animal.">Se gostaria de adoptar um animal específico, indique por favor o nome do animal.</label>
+            <p></p>
+            <input type="text" id="nome_animal" name="nome_animal">
+         </div>
+         <p></p>
+         <div>
+            <label for="sexo">Caso não procure adoptar um animal específico, indique se tem preferência pelo sexo do animal. *</label>
+            <p></p>
+            <select id="sexo" name="sexo" required>
+                <option value="femea">Fêmea</option>
+                <option value="macho">Macho</option>
+                <option value="indiferente">Indiferente</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="objetivo"> Qual o objetivo da adoção? *</label>
+            <p></p>
+            <select id="objetivo" name="objetivo" required>
+                <option value="companhia">Companhia</option>
+                <option value="companhia_gato">Companhia para outro gato</option>
+                <option value="criacao">Criação</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="habitacao">Tipo de habitação *</label>
+            <p></p>
+            <select id="habitacao" name="habitacao" required>
+                <option value="apartamento">Apartamento</option>
+                <option value="casa">Casa com quintal / acesso ao exterior</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="jardim">Se tem jardim, este está completamente vedado?</label>
+            <p></p>
+            <select id="jardim" name="jardim">
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
+            </select>
+         </div>
+         <p></p> 
+         <div>
+            <label for="habitacao">A habitação é *</label>
+            <p></p>
+            <select id="habitacao" name="habitacao" required>
+                <option value="própria">Própria</option>
+                <option value="arrendada">Arrendada</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="adultos">Quantos adultos vivem na casa? *</label>
+            <p></p>
+            <input type="number" id="adultos" name="adultos" min="0" max="99" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="criancas">Vivem crianças na casa? Se sim, indique o intervalo de idades. *</label>
+            <p></p>
+            <select id="criancas" name="criancas" required>
+                <option value="0">Não existem crianças</option>
+                <option value="a"> 5 anos</option>
+                <option value="b">05 a 10 anos</option>
+                <option value="c">>10 anos</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="frequenciaCrianças">A casa é visitada frequentemente por crianças? *</label>
+            <p></p>
+            <select id="frequenciaCrianças" name="frequenciaCrianças" required>
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="tempoSozinho">Quantas horas por dia, em média, passará o animal, sozinho em casa? *</label>
+            <p></p>
+            <input type="number" id="tempoSozinho" name="tempoSozinho" min="0" max="24" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="outros_animais">Tem outros animais em casa e/ou a seu cargo? Se sim, especifique por favor o tipo e a idade. *</label>
+            <p></p>
+            <input type="text" id="outros_animias" name="outros_animais" required>
+         </div>
+            
+            <p>Que tipo de personalidade espera encontrar no animal? Preencha por favor as próximas questões:</p>
+
+         <div>
+            <label for="gosteCriancas">Goste de Crianças: *</label>
+            <p></p>
+            <select id="gosteCriancas" name="gosteCriancas" required>
+                <option value="muitoImportante">Muito Importante</option>
+                <option value="importante">Importante</option>
+                <option value="poucoImportante">Pouco Importante</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="sociabilidade">Sociável com Outros Animais: *</label>
+            <p></p>
+            <select id="sociabilidade" name="sociabilidade" required>
+                <option value="muitoImportante">Muito Importante</option>
+                <option value="importante">Importante</option>
+                <option value="poucoImportante">Pouco Importante</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="estranhos">Não Se Importe Com Estranhos: *</label>
+            <p></p>
+            <select id="estranhos" name="estranhos" required>
+                <option value="muitoImportante">Muito Importante</option>
+                <option value="importante">Importante</option>
+                <option value="poucoImportante">Pouco Importante</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="esterilização">Esteja esterilizado/castrado: *</label>
+            <p></p>
+            <select id="esterilização" name="esterilização" required>
+                <option value="muitoImportante">Muito Importante</option>
+                <option value="importante">Importante</option>
+                <option value="poucoImportante">Pouco Importante</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="pegado_colo">Goste de ser pegado ao colo: *</label>
+            <p></p>
+            <select id="pegado_colo" name="pegado_colo" required>
+                <option value="muitoImportante">Muito Importante</option>
+                <option value="importante">Importante</option>
+                <option value="poucoImportante">Pouco Importante</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="calmo">Que seja calmo: *</label>
+            <p></p>
+            <select id="calmo" name="calmo" required>
+                <option value="muitoImportante">Muito Importante</option>
+                <option value="importante">Importante</option>
+                <option value="poucoImportante">Pouco Importante</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="sozinho">Que se comporte bem quando fica sozinho: *</label>
+            <p></p>
+            <select id="sozinho" name="sozinho" required>
+                <option value="muitoImportante">Muito Importante</option>
+                <option value="importante">Importante</option>
+                <option value="poucoImportante">Pouco Importante</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="atividade">Atividade do animal: *</label>
+            <p></p>
+            <select id="atividade" name="atividade" required>
+                <option value="0">Calmo</option>
+                <option value="a">Moderadamente activo</option>
+                <option value="b">Activo</option>
+                <option value="c">Indeferente</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="primeiro_animal">Será o seu primeiro animal? *</label>
+            <p></p>
+            <select id="primeiro_animal" name="primeiro_animal" required>
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="experiência">Se não, conte-nos a sua experiência por favor.</label>
+            <p></p>
+            <input type="text" id="experiência" name="experiência">
+         </div>
+         <p></p>
+         <div>
+            <label for="ausência">Na sua ausência (férias p.ex.) como pretende deixar o animal? *</label>
+            <p></p>
+            <select id="ausência" name="ausência" required>
+                <option value="0">Ficará aos cuidados de um familiar/conhecido;</option>
+                <option value="a">Ficará em hotel;</option>
+                <option value="b">Irá comigo de férias.</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="preso">O animal ficará preso em alguma situação?  *</label>
+            <p></p>
+            <select id="preso" name="preso"  required>
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="veterinário">Tem algum veterinário preferido? Se sim, deixe o seu nome e contacto. *</label>
+            <p></p>
+            <input type="text" id="veterinário" name="veterinário" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="acidente">No caso de acidente, irá recorrer a um veterinário? *</label>
+            <p></p>
+            <select id="acidente" name="acidente" required>
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="conta_elevada">Se a conta for elevada, o que fará? *</label>
+            <p></p>
+            <input type="text" id="conta_elevadao" name="conta_elevada" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="alimentação">Que tipo de alimentação pretende dar ao animal? *</label>
+            <p></p>
+            <select id="alimentação" name="alimentação" required>
+                <option value="0">Ração Seca</option>
+                <option value="a">Ração húmida</option>
+                <option value="b">Comida Caseira</option>
+                <option value="c">Restos de refeições</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="planos">O que está nos seus planos para os próximos 10/15 anos? *</label>
+            <p></p>
+            <select id="planos" name="planos" required>
+                <option value="0">Ter filhos</option>
+                <option value="a">Viajar</option>
+                <option value="b">Casar</option>
+                <option value="c">Mudar de país/cidade/etc</option>
+                <option value="d">Mudar de casa</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="alergias">Algum dos elementos do seu agregado familiar, ou amigos/parentes próximos, tem alergia a cães ou gatos? *</label>
+            <p></p>
+            <input type="text" id="alergias" name="alergias" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="gravidez">Em caso de gravidez, fará o teste da toxoplasmose? *</label>
+            <p></p>
+            <input type="text" id="gravidez" name="gravidez" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="positivo">Se for positivo, o que fará? *</label>
+            <p></p>
+            <input type="text" id="positivo" name="positivo" required>
+         </div>
+         <p></p>
+         <div>
+            <label for="apoio/conselhos">Gostaria de continuar a ter o nosso apoio/conselhos, depois de adoptar o animal? *</label>
+            <p></p>
+            <select id="apoio/conselhos" name="apoio/conselhos" required>
+                <option value="sim">Sim</option>
+                <option value="não">Não</option>
+            </select>
+         </div>
+         <p></p>
+         <div>
+            <label for="informação">Outra informação que queira partilhar connosco</label>
+            <p></p>
+            <input type="text" id="informação" name="informação">
+         </div>
+         <p></p>
+         <div>
+            <label for="documentos">Anexar documentos:</label>
+            <p></p>
+            <input type="file" id="documentos" name="documentos">
+         </div>
+
+            <p>Vamos manter os seus dados em segurança, enquanto assim o pretender, pode eliminar ou editar. Consulte a nossa Política de Privacidade. *</p>
+
+               <div class="checkbox-container">
+                  <input type="checkbox" id="politica_privacidade" name="politica_privacidade" required>
+                  <label for="politica_privacidade">Concordo com a Política de Privacidade.</label>
+                </div>
+            
+         <p>*Campos de preenchimento obrigatório</p>
+         <div>
+            <button type="submit">Enviar</button>
+         </div>
+         
+        </form>
+    </section>
+   </div>
 </body>
 </html>
