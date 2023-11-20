@@ -1,0 +1,45 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Estilos para a navbar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 15px;
+    padding: 10px;
+}
+#loja {
+    text-align: center;
+    padding: 50px;
+}
+
+#loja h2 {
+    font-size: 2em;
+}
+
+.card_loja img{
+    width: 240px;
+    height: 240px;
+
+}
