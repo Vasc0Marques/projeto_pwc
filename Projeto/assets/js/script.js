@@ -17,3 +17,18 @@
             quantityInput.value = quantityValue - 1;
         }
     }
+
+    function initMap() {
+        var iplLatLng = {lat: 39.735129, lng: -8.820732}; // Coordenadas aproximadas do Instituto Politécnico de Leiria
+    
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: iplLatLng,
+            zoom: 15
+        });
+    
+        var marker = new google.maps.Marker({
+            map: map,
+            position: iplLatLng,
+            title: 'Instituto Politécnico de Leiria (IPL)'
+        });
+    }

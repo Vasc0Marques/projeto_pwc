@@ -1,0 +1,63 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Estilos para a navbar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 15px;
+    padding: 10px;
+}
+#loja {
+    text-align: center;
+    padding: 50px;
+}
+
+#loja h2 {
+    font-size: 2em;
+}
+
+.card_loja img{
+    width: 240px;
+    height: 240px;
+}
+.card_loja button{
+    background-color: #604caf;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.quantity-input {
+    width: 45px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 3px 5px;
+}

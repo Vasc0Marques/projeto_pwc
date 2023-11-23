@@ -1,0 +1,87 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Estilos para a navbar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 15px;
+    padding: 10px;
+}
+.container{
+    margin-left: 20px;
+    max-width: 800px;
+    margin: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 70%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #604caf;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #604caf;
+  }
+  .checkbox-container {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  
+  .checkbox-container label {
+    margin-left: 10px;
+  }
+  .checkbox-container input {
+    margin-top: -8px;
+    width: auto;
+  }
