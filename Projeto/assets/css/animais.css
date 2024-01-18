@@ -1,19 +1,23 @@
 body {
-  height: 100vh;
-  background-color:#fff;
+    height: 100vh;
+    background-color:#fff;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: solid;
+    
 }
 li{
-list-style: none;
+  list-style: none;
 }
 a{
-text-decoration: none;
-color: white;
-font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
 }
 a:hover{
-color: #604caf;
+  color: #604caf;
 }
-
 header{
   position: flex;
   padding: 0 2rem;
@@ -71,59 +75,28 @@ header{
   transform: scale(1.05);
   color: #fff; 
 }
-.container{
-    margin-left: 20px;
-    max-width: 800px;
-    margin: 30px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-}
-form {
+.search-panel {
     display: flex;
     flex-direction: column;
-  }
+    width: 200px; 
+    margin-left: 20px;
+}
 
-  label {
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
+.search-filter, .search-button {
+    margin-bottom: 10px;
+}
 
-  input,
-  select,
-  textarea {
-    width: 70%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  button {
-    background-color: #604caf;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #604caf;
-  }
-  .checkbox-container {
+.cards-container {
     display: flex;
-    margin-bottom: 8px;
-  }
-  
-  .checkbox-container label {
-    margin-left: 10px;
-  }
-  .checkbox-container input {
-    margin-top: -8px;
-    width: auto;
-  }
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 240px; 
+}
+
+.card {
+    width: 200px; 
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}

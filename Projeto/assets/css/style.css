@@ -1,46 +1,74 @@
-/* Reset de estilos e estilos gerais */
-body, ul {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+    height: 100vh;
+    background-color:rgb(255, 255, 255);
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+a:hover{
+  color: #604caf;
+}
+header{
+  position: flex;
+  padding: 0 2rem;
 }
 
-/* Estilos para a navbar */
-nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+.navbar {
+  width: 102%;
+  height: 50px;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; 
+  text-decoration: none;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    margin: 10px 15px;
-    padding: 10px;
-}
-#home {
-    text-align: center;
-    padding: 50px;
+.navbar .links {
+  margin-top: 20px;
+  display: flex;
+  gap: 2rem;
 }
 
-#home h1 {
-    font-size: 2em;
+.navbar .links a {
+  color: #000;
+  text-decoration: none; 
+  font-size: 20px;
 }
 
-#home p {
-    font-size: 1.2em;
+.navbar .toggle_btn {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.login_btn {
+  background-color: #604caf;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.action_btn:hover {
+  transform: scale(1.05);
+  color: #fff; 
 }
 
 section {
@@ -48,22 +76,37 @@ section {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 20px;
+    margin-top: 60px;
   }
+
+.row{
+  margin-top: 70px;
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col{
+  flex-basis: 50%;
+  text-align: center;
+}
 
   .animal-card {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 2px 8px 6px 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
     overflow: hidden;
-    width: 300px;
+    width: 350px;
     transition: transform 0.3s;
     text-align: center;
+    display: inline-block;
   }
 
   .animal-card img {
-    width: 100%;
+    width: 300px;
+    height: 200px;
     border-radius: 8px;
     margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -95,13 +138,27 @@ section {
 
   .animal-card:hover {
     transform: scale(1.05);
+    color: #604caf;
   }
 
-  .testimonial {
-    background-color: #604caf;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin: 20px;
+  .caixa-texto {
+    border: 1px solid #ccc;
     border-radius: 8px;
-  }
+    padding: 20px;
+    margin: 0 20px;
+    background-color:  #4e4e4e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.frase {
+    font-size: 16px;
+    color: #fff;
+}
