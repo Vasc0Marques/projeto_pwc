@@ -1,0 +1,120 @@
+body {
+  height: 100vh;
+  background-color:rgb(255, 255, 255);
+}
+li{
+list-style: none;
+}
+a{
+text-decoration: none;
+color: white;
+font-size: 1rem;
+}
+a:hover{
+color: #604caf;
+}
+header{
+position: flex;
+padding: 0 2rem;
+}
+
+.navbar {
+width: 100%;
+height: 50px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.navbar .logo a {
+font-size: 1.5rem;
+font-weight: bold;
+color: #000; 
+text-decoration: none;
+}
+
+.navbar .links {
+margin-top: 20px;
+display: flex;
+gap: 2rem;
+}
+
+.navbar .links a {
+color: #000;
+text-decoration: none; 
+font-size: 20px;
+}
+
+.navbar .toggle_btn {
+color: #fff;
+font-size: 1.5rem;
+cursor: pointer;
+display: none;
+}
+.login_btn {
+background-color: #604caf;
+color: #fff;
+padding: 0.5rem 1rem;
+border: none;
+outline: none;
+border-radius: 30px;
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+text-decoration: none;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 240px; 
+}
+
+.card {
+    width: 200px; 
+    height: 400px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#petCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none; /* Adiciona para remover sublinhado padrão de links */
+  color: inherit; /* Adiciona para herdar a cor do texto padrão do elemento pai */
+}
+
+.card img {
+  width: 80%;
+  max-height: 80%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.card h2, .card h4 {
+  display: block; /* Torna os elementos de cabeçalho (h2 e h4) em elementos de bloco */
+  margin: 10px 0; /* Adiciona margens para espaçamento entre elementos */
+  font-size: 18px; /* Define o tamanho da fonte para o nome */
+  color: #333; /* Define a cor do texto para preto */
+}
+
+.card h4 {
+  font-size: 14px; /* Define o tamanho da fonte para a idade */
+  color: #777; /* Adiciona uma cor mais escura para a idade */
+}

@@ -1,0 +1,141 @@
+body {
+    height: 100vh;
+    background-color:#fff;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+a:hover{
+  color: #604caf;
+}
+
+header{
+    position: flex;
+    padding: 0 2rem;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000; 
+    text-decoration: none;
+  }
+  
+  .navbar .links {
+    margin-top: 20px;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar .links a {
+    color: #000;
+    text-decoration: none; 
+    font-size: 20px;
+  }
+  
+  .navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .login_btn {
+    background-color: #604caf;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .action_btn:hover {
+    transform: scale(1.05);
+    color: #fff; 
+  }
+.team-member {
+    margin-top: 30px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.container{
+    margin-left: 40px;
+    max-width: 800px;
+    margin: 20px 0px 0px 325px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.membro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px; 
+    
+}
+#nossaequipe {
+    display: flex;
+    justify-content: space-around; /* ou use 'space-between' para espaçamento máximo entre as imagens */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha, se necessário */
+}
+.membro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.instagram-logo {
+    width: 50px; /* Ajuste conforme necessário */
+    height: 50px; /* Ajuste conforme necessário */
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+.instagram-logo {
+    width: 50px; /* Ajuste conforme necessário */
+    height: 50px; /* Ajuste conforme necessário */
+    margin-top: 5px; /* Ajuste a margem conforme necessário */
+}
+
+.membroLogotipo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px; 
+    justify-content: space-around;
+
+}
+
+#imgLogo {
+    display: flex;
+    float: left;
+    position: relative;
+    margin-right: 500px;
+    
+}
